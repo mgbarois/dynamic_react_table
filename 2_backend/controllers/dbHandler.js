@@ -31,9 +31,8 @@ const resetProjects = (req, res, db) => {
             // Remove the dataframe id column, and project id column, convert wtg numbers to array
             projects.map(proj => {
                 delete proj["__EMPTY"];
-                delete proj.id;
+                // delete proj.id;
                 // proj["acquisition_date"] = new Date(proj["acquisition_date"])
-                // console.log(proj["acquisition_date"]);
                 proj.WTG_numbers = proj.WTG_numbers.replace(/;/g, ", ");
                 return proj;
             })
