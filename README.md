@@ -63,8 +63,10 @@ In order for the map to display properly, create a `3_frontend/.env` file and ad
 **Frontend**
 - Make table responsive
 - Improve errors and warnings (currently just window alerts)
-- Manage console warnings (mostly map-related)
 - Add operation confirmation (ex. highlighting, animations, modals to show project was correctly added or edited)
+- Add search functionality
+- Change WTG cells to manipulatable badge lists
+- Manage console warnings (mostly map-related)
 
 **Backend**
 - Add backend layer of input validation (ex. null inputs, incorrect form)
