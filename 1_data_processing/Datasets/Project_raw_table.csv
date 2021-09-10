@@ -1,0 +1,16 @@
+"id","project_name","project_number","acquisition_date","number_3l_code","project_deal_type_id","project_group_id","project_status_id","company_id"
+16,"Mettlach","002","2019-04-18","MET","Share","RW 1","1 Operating",9
+17,"Harrienstedt","003","2019-04-13","HAS","Share","RW 1","1 Operating",19
+11,"Watzerath","008","2020-01-07","WAT","Asset","RW 1","1 Operating",17
+12,"Egeln","011","2021-01-27","EGN","Share","QE 4","1 Operating",3
+21,"Holtum","005","2019-09-02","HOL","Asset","RW 1","1 Operating",10
+22,"Jeesewitz","007","2019-09-02","JES","Share","RW 1","1 Operating",11
+18,"Zodel","009","2020-04-24","ZOD","Share","RW 1","1 Operating",16
+9,"Zörbig","006","2019-09-19","ZRB","Asset","RW 1","1 Operating",14
+47,"Ahrensbök","014",NULL,NULL,"Share","QE 4","1 Operating",8
+13,"Beppener Bruch","013","2021-02-05","BEB","Share","QE 4","2 DD",12
+15,"Schackensleben","004 A","2019-04-16","SSA","Asset","RW 1","1 Operating",18
+20,"Salingen","004 B","2019-04-16","SAL","Asset","RW 1","1 Operating",18
+14,"Sebbenhausen-Schweringen","010","2020-08-03","SEB","Share","RW 1","1 Operating",13
+19,"Ingstetten","012",NULL,"ING","Asset","QE 4","2 DD",4
+10,"Waldow","001","2019-12-19","WLD","Asset","RW 1","1 Operating",15

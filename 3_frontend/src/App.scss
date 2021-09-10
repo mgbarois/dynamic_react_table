@@ -1,0 +1,291 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+$baseColor: #398B93;
+$borderRadius: 10px;
+$imageBig: 100px;
+$imageSmall: 60px;
+$padding: 5px;
+$box-shadow : 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+
+
+body {
+    * { box-sizing: border-box; }
+    background-color: rgb(235, 233, 233);
+ }
+.App {
+    font-family: 'Work Sans', sans-serif;
+    
+    .signin-page {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+        background-image: url("luo-lei-Xa4pTwafe5U-unsplash.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        .card {
+            margin-top: 60px;
+            padding: 20px;
+
+            img {
+                width: 30px;
+            }
+
+            .card-title {
+                font-size: 2em;
+            }
+
+            input {
+                margin: 20px 0;
+                border:none;
+                border-bottom: 1px rgb(100, 160, 184) solid;
+
+                &:focus-visible {
+                    outline:none;
+                border-bottom: 2px rgb(100, 160, 184) solid;
+
+                }
+            }    
+        }
+    }
+
+    .navigation {
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+        background-color: $baseColor;
+        padding: 12px;
+
+        .btn-success {
+            background-color: transparent;
+            border: none;
+        }
+
+        i {
+            font-size: 20px;
+            color: white;
+        }
+        
+        .nav-item {
+            margin: 10px 5px;
+        }
+    }
+    .card {
+        box-shadow : $box-shadow;
+        border: none;
+        font-size: .85em;
+        margin: 2em auto;
+    }
+
+    .project-card {
+        border: none;
+        width: 95%;
+        overflow: auto;
+    
+        .card-title {
+            font-size: 3em;
+            padding: 2em 1em .5em 1em;
+            background-color: $baseColor;
+            color: white;
+            width: 100%;
+
+            img {
+                width:60px;
+            }
+
+        }
+        
+        td, th { 
+            color: darken($baseColor, 10%);
+            padding: $padding; 
+        }
+        
+        td {
+            text-align: center;
+            vertical-align: middle;
+
+            .badge {
+                background-color: #044ff1;
+            }
+        }
+        
+        th { 
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        input, select {
+            border-radius: 3px;
+            padding: 3px;
+            border: .5px solid rgb(197, 195, 195);
+        }
+
+        .add-project {
+
+           height: 100px;
+
+            input {
+                border:none;
+                border-bottom: 1px rgb(100, 160, 184) solid;
+
+                &:focus-visible {
+                    outline:none;
+                border-bottom: 2px rgb(100, 160, 184) solid;
+
+                }
+            }           
+        }
+        .controls {
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            .btn {
+                background-color: rgb(229, 226, 226);
+                color: black;
+                border: none;
+                box-shadow: $box-shadow;
+                margin: 5px;
+                font-size: 13px;
+                padding: 5px 10px;
+
+                &.add-button {
+                    background-color: #0b5ed7; 
+                    border-radius: 50%;
+                    color: white;
+                    font-size: 18px;
+                    padding: 7px 13px;
+                }
+            }
+        }
+    }
+    .visual-section {
+        h3 {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .hr {
+            height: 3px;
+            width: 100px;
+            background-color: $baseColor;
+            margin:auto;
+        }
+        .map > div > div > div{
+            margin-top: 30px;
+            box-shadow: $box-shadow;
+        }
+
+        .bar {
+            padding: 30px;
+            width: 60%;
+            margin: 2em auto;
+            box-shadow: $box-shadow;
+            border:none;
+        }
+    }
+}
+
+// @media screen and (max-width: 700px) {   
+//    .projects-table, tr, td { display: block; }
+   
+//    td {
+//       &:first-child {
+//          position: absolute;
+//          top: 50%;
+//          transform: translateY(-50%);
+//          width: $imageBig;
+//       }
+
+//       &:not(:first-child) {
+//          clear: both;
+//          margin-left: $imageBig;
+//          padding: 4px 20px 4px 90px;
+//          position: relative;
+//          text-align: left;
+
+//          &:before {
+//             color: lighten($baseColor, 30%);
+//             content: '';
+//             display: block;
+//             left: 0;
+//             position: absolute;
+//          }
+//       }
+
+//       &:nth-child(2):before { content: 'Name:'; }
+//       &:nth-child(3):before { content: 'Email:'; }
+//       &:nth-child(4):before { content: 'Phone:'; }
+//       &:nth-child(5):before { content: 'Comments:'; }
+//    }
+   
+//    tr {
+//       padding: $padding 0;
+//       position: relative;
+//       &:first-child { display: none; }
+//    }
+// }
+
+// @media screen and (max-width: 500px) {
+//    .header {
+//       background-color: transparent;
+//       color: lighten($baseColor, 60%);
+//       font-size: 2em;
+//       font-weight: 700;
+//       padding: 0;
+//       text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+//    }
+   
+//    img {
+//       border: 3px solid;
+//       border-color: lighten($baseColor, 50%);
+//       height: $imageBig;
+//       margin: 0.5rem 0;
+//       width: $imageBig;
+//    }
+   
+//    td {
+//       &:first-child { 
+//          background-color: lighten($baseColor, 45%); 
+//          border-bottom: 1px solid lighten($baseColor, 30%);
+//          border-radius: $borderRadius $borderRadius 0 0;
+//          position: relative;   
+//          top: 0;
+//          transform: translateY(0);
+//          width: 100%;
+//       }
+      
+//       &:not(:first-child) {
+//          margin: 0;
+//          padding: 5px 1em;
+//          width: 100%;
+         
+//          &:before {
+//             font-size: .8em;
+//             padding-top: 0.3em;
+//             position: relative;
+//          }
+//       }
+      
+//       &:last-child  { padding-bottom: 1rem !important; }
+//    }
+   
+//    tr {
+//       background-color: white !important;
+//       border: 1px solid lighten($baseColor, 20%);
+//       border-radius: $borderRadius;
+//       box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+//       margin: 0.5rem 0;
+//       padding: 0;
+//    }
+   
+//   .table-projects { 
+//       border: none; 
+//       box-shadow: none;
+//       overflow: visible;
+//    }
+// }
